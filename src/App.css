@@ -1,0 +1,69 @@
+.app-container {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 6rem;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.counter-controls button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.count-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.reset-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: darkred;
+}
+
+.app-footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+}
