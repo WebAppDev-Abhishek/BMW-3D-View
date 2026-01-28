@@ -28,10 +28,13 @@ const PaymentCard = () => {
 
 const containerStyle = {
   bottom: "40px",
-  left: "620px", 
+  left: "50%",
+  transform: "translateX(-50%)",
+  position: "absolute",
+  padding: "20px",
   width: "220px",
   background: "linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%)",
-  backdropFilter: "blur(25px)",
+  backdropFilter: "blur(2px)",
   border: "1px solid rgba(255, 255, 255, 0.3)",
   boxShadow: "0 15px 35px rgba(0, 0, 0, 0.1)",
   overflow: "hidden",

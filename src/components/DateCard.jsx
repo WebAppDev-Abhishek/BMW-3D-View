@@ -34,10 +34,10 @@ const DateCard = () => {
 // Styles to match the theme
 const containerStyle = {
   bottom: "40px",
-  left: "380px", // Positioned next to LocationCard
+  left: "25%", // Positioned next to LocationCard
   width: "220px",
   background: "linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%)",
-  backdropFilter: "blur(25px)",
+  backdropFilter: "blur(2px)",
   border: "1px solid rgba(255, 255, 255, 0.3)",
   boxShadow: "0 15px 35px rgba(0, 0, 0, 0.1)",
   overflow: "hidden",

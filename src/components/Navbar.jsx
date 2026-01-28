@@ -26,10 +26,10 @@ const navStyle = {
   alignItems: "center",           // CRITICAL: Centers everything vertically
   padding: "10px 80px",           // Horizontal "gap" for logo/button
   zIndex: 100,
-  background: "rgba(255, 255, 255, 0.05)",
-  backdropFilter: "blur(12px)",
+  background: "rgba(255, 255, 255, 0.50)",
+  backdropFilter: "blur(20px)",
   borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
-  color: "white",
+  color: "black",
   fontFamily: "sans-serif",
   
   // FIX: Ensures padding doesn't make the navbar wider than 100%

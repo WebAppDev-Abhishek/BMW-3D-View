@@ -44,7 +44,7 @@ const containerStyle = {
   borderRadius: "40px",
   // Matching AIAssistant's Ultra-Glass Background
   background: "linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%)",
-  backdropFilter: "blur(25px)",
+  backdropFilter: "blur(2px)",
   border: "1px solid rgba(255, 255, 255, 0.3)",
   boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
 };

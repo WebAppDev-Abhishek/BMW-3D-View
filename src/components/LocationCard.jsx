@@ -47,7 +47,7 @@ const LocationCard = () => {
 const containerStyle = {
   position: "absolute", // Ensure it's positioned relative to the App container
   bottom: "40px",
-  left: "120px",
+  
   width: "240px",
   background: "linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%)",
   backdropFilter: "blur(2px)",
