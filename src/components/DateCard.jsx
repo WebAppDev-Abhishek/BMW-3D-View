@@ -1,37 +1,54 @@
 import React from 'react';
 import GlassCard from './GlassCard';
+import { MdCalendarToday, MdArrowForward } from "react-icons/md";
 
-const DateCard = () => (
-  <GlassCard style={{ bottom: "40px", left: "300px", width: "300px", height: "160px" }}>
-    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-      <div>
-        <h4 style={{ margin: 0, fontSize: "14px" }}>My Dates</h4>
-        <span style={{ fontSize: "11px", opacity: 0.5 }}>20th of July · 10:25 AM</span>
-      </div>
-      <button style={iconBtnStyle}>⤢</button>
-    </div>
+const DateCard = () => {
+  const darkGray = "#333333";
 
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-around", marginTop: "20px" }}>
-      <div style={dateBoxStyle}>
-        <span style={{ fontSize: "12px", color: "#00a86b" }}>◀</span>
-        <div style={{ textAlign: "center" }}>
-          <div style={{ fontSize: "28px", fontWeight: "bold" }}>20</div>
-          <div style={{ fontSize: "12px", opacity: 0.6 }}>Jul</div>
-        </div>
-        <span style={{ fontSize: "12px", color: "#00a86b" }}>▶</span>
-      </div>
+  return (
+    <GlassCard style={containerStyle}>
+      <div style={shineOverlayStyle} />
       
-      <div style={{ height: "40px", width: "1px", background: "rgba(0,0,0,0.1)" }} />
-
-      <div style={{ textAlign: "center" }}>
-        <div style={{ fontSize: "28px", fontWeight: "bold" }}>10:25</div>
-        <div style={{ fontSize: "12px", opacity: 0.6 }}>AM</div>
+      <div style={headerStyle}>
+        <MdCalendarToday size={14} color={darkGray} />
+        <span style={labelStyle}>Rental Period</span>
       </div>
-    </div>
-  </GlassCard>
-);
 
-const dateBoxStyle = { display: "flex", alignItems: "center", gap: "15px", background: "rgba(255,255,255,0.4)", padding: "10px 20px", borderRadius: "15px" };
-const iconBtnStyle = { border: "none", background: "none", cursor: "pointer", opacity: 0.5 };
+      <div style={dateRowStyle}>
+        <div style={dateBlock}>
+          <span style={subLabel}>From</span>
+          <div style={dateValue}>Oct 12</div>
+        </div>
+        
+        <MdArrowForward size={18} color="rgba(0,0,0,0.2)" />
+
+        <div style={dateBlock}>
+          <span style={subLabel}>To</span>
+          <div style={dateValue}>Oct 15</div>
+        </div>
+      </div>
+    </GlassCard>
+  );
+};
+
+// Styles to match the theme
+const containerStyle = {
+  bottom: "40px",
+  left: "380px", // Positioned next to LocationCard
+  width: "220px",
+  background: "linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%)",
+  backdropFilter: "blur(25px)",
+  border: "1px solid rgba(255, 255, 255, 0.3)",
+  boxShadow: "0 15px 35px rgba(0, 0, 0, 0.1)",
+  overflow: "hidden",
+};
+
+const headerStyle = { display: "flex", alignItems: "center", gap: "8px", position: "relative", zIndex: 1 };
+const labelStyle = { fontSize: "10px", textTransform: "uppercase", letterSpacing: "1px", fontWeight: "700", color: "#555" };
+const dateRowStyle = { display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "12px", position: "relative", zIndex: 1 };
+const dateBlock = { display: "flex", flexDirection: "column" };
+const subLabel = { fontSize: "9px", color: "#666", textTransform: "uppercase" };
+const dateValue = { fontSize: "18px", fontWeight: "800", color: "#111" };
+const shineOverlayStyle = { position: "absolute", top: "-50%", left: "-50%", width: "200%", height: "200%", background: "radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%)", pointerEvents: "none" };
 
 export default DateCard;

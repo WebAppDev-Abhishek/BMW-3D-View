@@ -3,7 +3,7 @@ import React from 'react';
 const GlassCard = ({ children, style }) => (
   <div style={{
     backgroundColor: "rgba(255, 255, 255, 0.4)",
-    backdropFilter: "blur(12px)",
+    backdropFilter: "blur(2px)",
     WebkitBackdropFilter: "blur(12px)",
     borderRadius: "24px",
     border: "1px solid rgba(255, 255, 255, 0.3)",
