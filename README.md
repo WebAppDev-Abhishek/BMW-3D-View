@@ -83,7 +83,6 @@ Open a Pull Request.
 <img width="1139" height="922" alt="Screenshot 2026-01-29 030651" src="https://github.com/user-attachments/assets/f856a751-c64c-4070-87ed-d978d36b9aaf" />
 
 📄 License
-Di![Uploading Screenshot 2026-01-29 030857.png…]()
 stributed under the MIT License. See LICENSE for more information.
 Next Steps
 Would you like me to generate a .gitignore file for you so that you don't accidentally upload large node_modules folders to GitHub?
